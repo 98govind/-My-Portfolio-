@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Govind Pandey | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <nav>
-            <h2 class="logo">Govind<span>Portfolio</span></h2>
-            <div>
+    <!-- Header / Hero Section -->
+    <header class="hero" id="home">
+        <nav class="navbar">
+            <h2 class="logo">Portfolio<span>.</span></h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -20,101 +34,198 @@
         </nav>
 
         <div class="hero-content">
-            <h1>Hi, I'm <span>Govind Pandey</span></h1>
-            <p>Python Developer | Problem Solver | DecodeLabs Intern</p>
-            <a href="#projects" class="btn">View My Projects</a>
+            <div class="hero-text" data-aos="fade-right">
+                <p class="small-title">Hello, I'm</p>
+                <h1>Govind Pandey</h1>
+                <h3><span class="typed-text"></span></h3>
+
+                <p class="hero-description">
+                    I am a fresher learning software development and Python programming.
+                    I enjoy building practical projects that help me improve my coding,
+                    logic building, and problem-solving skills.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://github.com/98govind" target="_blank" class="btn">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fa-solid fa-folder-open"></i> View Projects
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card" data-aos="fade-left">
+                <h3>Developer Profile</h3>
+                <p><i class="fa-solid fa-code"></i> Aspiring Software Developer</p>
+                <p><i class="fa-brands fa-python"></i> Python Learner</p>
+                <p><i class="fa-solid fa-laptop-code"></i> 6 Projects Completed</p>
+                <p><i class="fa-solid fa-seedling"></i> Fresher & Open to Learn</p>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            <p>
-                <p>
-                    Hi, I’m Govind Pandey, an aspiring software developer with a strong passion for Python programming and problem-solving.
-                    I enjoy turning ideas into practical applications and building projects that are useful, efficient, and user-friendly.
-                    During my learning journey and internship at DecodeLabs, I have successfully developed multiple projects that improved my understanding of Python, logic building, and software development.
-                    My experience includes creating applications such as task managers, expense trackers, password generators, and quiz systems. 
-                    Each project has strengthened my skills in writing clean code, solving problems, and building real-world solutions.
-                    I am continuously learning and improving myself to become a professional software developer, and I look forward to contributing to meaningful projects in the technology industry.
-                </p>
-            </p>
-        </p>
-    </section>
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 data-aos="fade-up">About Me</h2>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-box">
-            <span>Python</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>CLI Applications</span>
-            <span>Problem Solving</span>
-            <span>File Handling</span>
+        <div class="about-box" data-aos="fade-up">
+            <p>
+                Hi, I’m Govind Pandey, an aspiring software developer with a strong interest
+                in programming, technology, and problem-solving. As a fresher, I am currently
+                focused on improving my skills in Python and web development by building
+                practical projects and learning through hands-on experience.
+            </p>
+
+            <p>
+                I believe that the best way to learn programming is by creating real projects.
+                That is why I have worked on different projects such as a To-Do List,
+                Expense Tracker, Random Password Generator, General Knowledge Quiz,
+                Portfolio Website, and Password Manager CLI.
+            </p>
+
+            <p>
+                These projects helped me understand Python basics, file handling, functions,
+                loops, conditions, debugging, clean code structure, and using Git and GitHub
+                for project management. I am still learning every day and trying to improve
+                my skills step by step.
+            </p>
+
+            <p>
+                My goal is to become a good software developer, build useful applications,
+                and keep growing through practice, projects, and continuous learning.
+            </p>
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 data-aos="fade-up">Skills</h2>
+
+        <div class="skills-container" data-aos="zoom-in">
+            <span><i class="fa-brands fa-python"></i> Python</span>
+            <span><i class="fa-brands fa-html5"></i> HTML</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span><i class="fa-brands fa-github"></i> GitHub</span>
+            <span><i class="fa-solid fa-terminal"></i> CLI</span>
+            <span><i class="fa-solid fa-bug"></i> Debugging</span>
+            <span><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 data-aos="fade-up">My Projects</h2>
 
         <div class="projects-container">
 
-            <div class="project-card">
-                <h3>To-Do List</h3>
+            <div class="project-card" data-aos="fade-up">
+                <i class="fa-solid fa-list-check project-icon"></i>
+                <h3>1. To-Do List</h3>
                 <p>
-                    A Python-based task management application designed to help users organize
-                    daily activities efficiently. It allows users to add, view, update, and remove
-                    tasks through a simple command-line interface.
+                    A Python-based task management application that helps users manage daily tasks.
+                    Users can add, view, update, and delete tasks using a simple command-line interface.
                 </p>
                 <p><b>Tech Used:</b> Python, Functions, Lists, CLI</p>
-                <a href="https://github.com/98govind/To_do-list-project1-Decodelab" target="_blank">View GitHub</a>
+                <a href="https://github.com/98govind/To_do-list-project1-Decodelab" target="_blank">View Project</a>
             </div>
 
-            <div class="project-card">
-                <h3>Expense Tracker</h3>
+            <div class="project-card" data-aos="fade-up">
+                <i class="fa-solid fa-wallet project-icon"></i>
+                <h3>2. Expense Tracker</h3>
                 <p>
-                    A Python application developed to help users manage personal finances by
-                    tracking income and expenses. It helps users record transactions and monitor
-                    spending habits in a simple way.
+                    A Python application created to track income and expenses. It helps users record
+                    transactions and understand spending habits in an organized way.
                 </p>
                 <p><b>Tech Used:</b> Python, File Handling, Functions, CLI</p>
-                <a href="https://github.com/98govind/Expense_Tracker-project2-Decodelab" target="_blank">View GitHub</a>
+                <a href="https://github.com/98govind/Expense_Tracker-project2-Decodelab" target="_blank">View Project</a>
             </div>
 
-            <div class="project-card">
-                <h3>Random Password Generator</h3>
+            <div class="project-card" data-aos="fade-up">
+                <i class="fa-solid fa-key project-icon"></i>
+                <h3>3. Random Password Generator</h3>
                 <p>
-                    A secure password generator built using Python that creates strong random
-                    passwords using uppercase letters, lowercase letters, numbers, and symbols
-                    to improve account security.
+                    A password generator that creates strong random passwords using uppercase letters,
+                    lowercase letters, numbers, and symbols for better security.
                 </p>
                 <p><b>Tech Used:</b> Python, String Module, Secrets Module</p>
-                <a href="https://github.com/98govind/DecodeLabs-Project3-RandomPasswordGenerator" target="_blank">View GitHub</a>
+                <a href="https://github.com/98govind/DecodeLabs-Project3-RandomPasswordGenerator" target="_blank">View Project</a>
             </div>
 
-            <div class="project-card">
-                <h3>General Knowledge Quiz</h3>
+            <div class="project-card" data-aos="fade-up">
+                <i class="fa-solid fa-circle-question project-icon"></i>
+                <h3>4. General Knowledge Quiz</h3>
                 <p>
-                    An interactive Python quiz application designed to test users’ general
-                    knowledge through multiple-choice questions. It evaluates answers and displays
-                    the final score.
+                    An interactive quiz application that asks general knowledge questions,
+                    checks user answers, and displays the final score.
                 </p>
-                <p><b>Tech Used:</b> Python, Loops, Conditional Statements, Functions</p>
-                <a href="https://github.com/98govind/General_Knowledge_Quiz_Project4-Decodelab" target="_blank">View GitHub</a>
+                <p><b>Tech Used:</b> Python, Loops, Conditions, Functions</p>
+                <a href="https://github.com/98govind/General_Knowledge_Quiz_Project4-Decodelab" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <i class="fa-solid fa-globe project-icon"></i>
+                <h3>5. Portfolio Website</h3>
+                <p>
+                    A personal portfolio website designed to showcase my skills, projects,
+                    learning journey, and contact information in a clean and professional way.
+                </p>
+                <p><b>Tech Used:</b> HTML, CSS, JavaScript, AOS, Typed.js</p>
+                <a href="https://github.com/98govind/-My-Portfolio-" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <i class="fa-solid fa-lock project-icon"></i>
+                <h3>6. Password Manager CLI</h3>
+                <p>
+                    A command-line password manager built with Python to store and manage passwords.
+                    This project helped me understand secure data handling, file handling, and CLI-based development.
+                </p>
+                <p><b>Tech Used:</b> Python, CLI, File Handling, Security Logic</p>
+                <a href="https://github.com/98govind/Password-Manager-CLI" target="_blank">View Project</a>
             </div>
 
         </div>
     </section>
 
-    <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
-        <p>Email: govindpandey5001@gmail.com</p>
-        <p>GitHub: github.com/98govind</p>
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <h2 data-aos="fade-up">Contact Me</h2>
+
+        <div class="contact-box" data-aos="zoom-in">
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <b>Email:</b> govindpandey5001@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-brands fa-github"></i>
+                <b>GitHub:</b>
+                <a href="https://github.com/98govind" target="_blank">github.com/98govind</a>
+            </p>
+
+            <p>
+                <i class="fa-solid fa-link"></i>
+                <b>Portfolio:</b>
+                <a href="https://98govind.github.io/-My-Portfolio-/" target="_blank">98govind.github.io/-My-Portfolio-</a>
+            </p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 Govind Pandey | All Rights Reserved</p>
+        <p>© 2026 Govind Pandey | Built with HTML, CSS, JavaScript, AOS, Typed.js & Font Awesome</p>
     </footer>
 
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
